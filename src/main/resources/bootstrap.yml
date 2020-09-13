@@ -5,17 +5,9 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
-    service-url:
-      defaultZone: http://localhost:8903/eureka
     registerWithEureka: true
     fetchRegistry: true
     region: default
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 
 spring:
   rabbitmq:
