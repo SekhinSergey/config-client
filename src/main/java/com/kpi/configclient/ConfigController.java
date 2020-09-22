@@ -14,6 +14,6 @@ public class ConfigController {
 
     @GetMapping(value = "/key")
     public String getKey() {
-        return this.key;
+        return key;
     }
 }
